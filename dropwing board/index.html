@@ -10,23 +10,34 @@
 	<header>
 		<div class="menu">
 			<ul>
-				<li class="active">생성</li>
-				<li>저장</li>
-				<li>목록</li>
+				<li id="reset">초기화</li>
+				<li id="download">다운로드</li>
 			</ul>
+			<div class="setting">
+				<div id="colorBox"></div>
+				<input id="lineW" type="range" min="1" max="20" value="1">
+				<div id="clear">
+					<div></div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
 		<div class="boardWrap">			
 			<canvas id="board"></canvas>
-		</div>
-		<div class="colorWrap">
-			<canvas id="color"></canvas>
-			<canvas id="bar"></canvas>
-			<div id="colorBox"></div>
+			<div id="RectW" class="arrow right"></div>
+			<div id="RectH" class="arrow bottom"></div>
+			<div id="RectC" class="arrow right bottom"></div>
 		</div>
 	</main>
-	<!-- <canvas id="Color"></canvas> -->
-	<!-- <div id="colorBox"></div> -->
+	<nav id="ColorWrap">
+		<div>
+			<div class="colorWrap">
+				<canvas id="color"></canvas>
+				<canvas id="bar"></canvas>
+			</div>
+			<div id="ColorClose">X</div>
+		</div>
+	</nav>
 </body>
 </html>
